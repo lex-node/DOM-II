@@ -5,7 +5,6 @@
 */
 
 
-
 //mousing over bus image changes bus img to cyberpunk bus img
 const funBusImg = document.querySelector(".intro img");
 funBusImg.addEventListener('mouseover', event => {
@@ -66,15 +65,24 @@ buttonElements.forEach(element => {
 });
 
 window.addEventListener("resize", () => {
-   funBusImg.setAttribute("src","img/cyber ant man.jpg");
+    funBusImg.setAttribute("src", "img/cyber ant man.jpg");
 });
 
 
+//sets up two click listeners; one of these listens to the leftmost destination box and triggers green background color; the other listens to the content-pick box that contains the destination boxes and triggers yellow background
+//a stopPropagation() is included in the leftmost destination box's event listener to stop the click from propagating up to the container; therefore, that destinationBox turns green rather than yellow
+
+const destinationBoxes = document.querySelectorAll(".content-pick .destination");
+const destinationBoxesContainer = document.querySelector(".content-pick");
+
+destinationBoxesContainer.addEventListener("click", event => {
+    event.target.style.backgroundColor = "yellow";
+
+});
+
+destinationBoxes[0].addEventListener("click", event => {
+    event.target.style.backgroundColor = "green";
+    event.stopPropagation();
+});
 
 
-
-//
-// element.addEventListener('click', (event) => {//Handle event});
-//
-//
-//     https://www.affaritampa.com/wp-content/uploads/Party-Bus-Tampa-8.jpg
