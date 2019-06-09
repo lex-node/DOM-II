@@ -36,9 +36,9 @@ document.body.addEventListener('wheel', event => {
     event.target.style.color = "#ff0080";
 });
 
-document.body.addEventListener('scroll', event => {
-    event.target.style.backgroundColor = "black";
-    event.target.style.color = "#ff0080";
+window.addEventListener('scroll', () => {
+    document.body.style.backgroundColor = "black";
+    document.body.style.color = "#ff0080";
 });
 
 const navElements = document.querySelectorAll(".main-navigation .nav-container .nav a");
