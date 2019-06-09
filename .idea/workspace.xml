@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6ee41e5-df43-4387-a6b7-880e53cbcdac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,7 +20,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="378">
-                <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+                <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
               </first_editor>
               <second_editor />
             </state>
@@ -31,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="84">
+              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -41,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/../DOM-I/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="672">
-              <caret line="41" column="55" lean-forward="true" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
+              <caret line="41" column="55" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -49,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="32" column="28" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="28" />
+            <state relative-caret-position="-478">
+              <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -58,7 +57,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
+            <state relative-caret-position="260">
               <caret line="212" column="38" lean-forward="true" selection-start-line="212" selection-end-line="212" selection-end-column="38" />
             </state>
           </provider>
@@ -74,6 +73,10 @@
       <find>home</find>
       <find>img</find>
       <find>color</find>
+      <find>h2</find>
+      <find>btn</find>
+      <find>a</find>
+      <find>Fun Bus</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -99,10 +102,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="302" />
-    <option name="y" value="28" />
-    <option name="width" value="1511" />
-    <option name="height" value="763" />
+    <option name="x" value="25" />
+    <option name="y" value="25" />
+    <option name="width" value="711" />
+    <option name="height" value="941" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -139,6 +142,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../DOM-I/js/index.js" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -167,19 +171,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560031363644</updated>
-      <workItem from="1560031364868" duration="11121000" />
+      <workItem from="1560031364868" duration="16896000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11121000" />
+    <option name="totallyTimeSpent" value="16896000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="2141" height="941" extended-state="6" />
+    <frame x="67" y="25" width="2621" height="941" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2148253" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17513472" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
@@ -201,41 +205,41 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../DOM-I/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="41" column="55" lean-forward="true" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="378">
-            <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+            <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/../DOM-I/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="32" column="28" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="28" />
+        <state relative-caret-position="672">
+          <caret line="41" column="55" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
+        <state relative-caret-position="260">
           <caret line="212" column="38" lean-forward="true" selection-start-line="212" selection-end-line="212" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-478">
+          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="84">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
         </state>
       </provider>
     </entry>

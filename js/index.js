@@ -1,23 +1,8 @@
 // Your code goes here
 /*## Task 2: Create Unique Event Listeners
 
-* [ ] Using your [index.js file](js/index.js), create 10 [unique event listeners](https://developer.mozilla.org/en-US/docs/Web/Events).
-using your creativity to make the Fun Bus site more interactive.  Here are some unique events you could try to use:
-	* [X] `mouseover`
-	* [ ] `keydown`
-	* [X] `wheel`
-	* [X] `drag / drop`
-	* [ ] `load`
-	* [ ] `focus`
-	* [ ] `resize`
-	* [ ] `scroll`
-	* [ ] `select`
-	* [ ] `dblclick`
-
-Using the 10 unique events, find ways to update the DOM in creative ways. For example you could change colors, animate objects, remove objects, etc.
-
 * [ ] Nest two similar events somewhere in the site and prevent the event propagation properly
-* [ ] Stop the navigation from items from refreshing the page by using `preventDefault()`*/
+*/
 
 
 
@@ -61,11 +46,31 @@ navElements.forEach(element => {
     element.addEventListener('contextmenu', event => {
         event.target.style.color = "#14FF00";
     });
+    element.addEventListener('click', event => {
+        event.preventDefault();
+    });
 });
 
 
-// let logo = document.getElementById("logo-img");
-// logo.setAttribute('src', siteContent["nav"]["img-src"]
+const buttonElements = document.querySelectorAll(".home .content-pick .destination .btn");
+buttonElements.forEach(element => {
+    element.addEventListener("mouseover", event => {
+        event.target.style.backgroundColor = "#ff0080";
+        event.target.style.color = "black";
+    });
+
+    element.addEventListener("click", event => {
+        event.target.style.backgroundColor = "black";
+        event.target.style.color = "#ff0080";
+    });
+});
+
+window.addEventListener("resize", () => {
+   funBusImg.setAttribute("src","img/cyber ant man.jpg");
+});
+
+
+
 
 
 //
