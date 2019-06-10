@@ -1,8 +1,15 @@
-// Your code goes here
-/*## Task 2: Create Unique Event Listeners
-
-* [ ] Nest two similar events somewhere in the site and prevent the event propagation properly
-*/
+/*
+* mouseover
+* click
+* dblclick
+* drag
+* wheel
+* scroll
+* contextmenu
+* resize
+* NEED TWO MORE
+*
+* */
 
 
 //mousing over bus image changes bus img to cyberpunk bus img
@@ -35,49 +42,59 @@ document.body.addEventListener('wheel', event => {
     event.target.style.color = "#ff0080";
 });
 
+//changes background to black when user scrolls through window
 window.addEventListener('scroll', () => {
     document.body.style.backgroundColor = "black";
     document.body.style.color = "#ff0080";
 });
 
+//changes nav anchor elements text color to neon green upon a right mouse click; prevents default behavior of anchor elements activating links
 const navElements = document.querySelectorAll(".main-navigation .nav-container .nav a");
 navElements.forEach(element => {
+    //change to neon green on right click
     element.addEventListener('contextmenu', event => {
         event.target.style.color = "#14FF00";
     });
+    //prevents nav default behavior of redirecting to link upon click
     element.addEventListener('click', event => {
         event.preventDefault();
     });
 });
 
 
+//"Sign Me Up" buttons change to pink background/black text scheme on a mouseover and to black background/pink text scheme on a mouse click
 const buttonElements = document.querySelectorAll(".home .content-pick .destination .btn");
 buttonElements.forEach(element => {
+    //pink background/black text scheme on a mouseover
     element.addEventListener("mouseover", event => {
         event.target.style.backgroundColor = "#ff0080";
         event.target.style.color = "black";
     });
 
+    //black background/pink text scheme on a mouse click
     element.addEventListener("click", event => {
         event.target.style.backgroundColor = "black";
         event.target.style.color = "#ff0080";
     });
 });
 
+//resizing of window changes fun bus or cyber bus image to cyber ant man image
 window.addEventListener("resize", () => {
     funBusImg.setAttribute("src", "img/cyber ant man.jpg");
 });
 
-
-//sets up two click listeners; one of these listens to the leftmost destination box and triggers green background color; the other listens to the content-pick box that contains the destination boxes and triggers yellow background
-//a stopPropagation() is included in the leftmost destination box's event listener to stop the click from propagating up to the container; therefore, that destinationBox turns green rather than yellow
-
+/*sets up two click listeners--
+* one of these listens to the leftmost destination box and triggers green background color;
+* the other listens to the content-pick box that contains the destination boxes and triggers yellow background.
+* A stopPropagation() is included in the leftmost destination box's event listener to stop the click from propagating up to the container;
+* therefore, that destinationBox turns green rather than yellow.
+* */
 const destinationBoxes = document.querySelectorAll(".content-pick .destination");
+
 const destinationBoxesContainer = document.querySelector(".content-pick");
 
 destinationBoxesContainer.addEventListener("click", event => {
     event.target.style.backgroundColor = "yellow";
-
 });
 
 destinationBoxes[0].addEventListener("click", event => {
