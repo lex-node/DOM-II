@@ -1,17 +1,3 @@
-/*
-* mouseover
-* click
-* dblclick
-* drag
-* wheel
-* scroll
-* contextmenu
-* resize
-* NEED TWO MORE
-*
-* */
-
-
 //mousing over bus image changes bus img to cyberpunk bus img
 const funBusImg = document.querySelector(".intro img");
 funBusImg.addEventListener('mouseover', event => {
@@ -85,23 +71,18 @@ logoHeadingElement.addEventListener("mouseout", event => {
 });
 
 
-
-/*header class="main-navigation">
-    <div class="container nav-container">
-    <h1 class="logo-heading">Fun Bus</h1>
-<nav class="nav">
-    <a class="nav-link" href="#">Home</a>
-    <a class="nav-link" href="#">About Us</a>
-<a class="nav-link" href="#">Blog</a>
-    <a class="nav-link" href="#">Contact</a>
-    </nav>
-    </div>
-    </header>*/
-
 //resizing of window changes fun bus or cyber bus image to cyber ant man image
 window.addEventListener("resize", () => {
     funBusImg.setAttribute("src", "img/cyber ant man.jpg");
 });
+
+//nav text changes to hot pink upon loading of page
+window.addEventListener("load", () => {
+    navElements.forEach(element => {
+        element.style.color = "#ff0080";
+    });
+});
+
 
 /*sets up two click listeners--
 * one of these listens to the leftmost destination box and triggers green background color;
