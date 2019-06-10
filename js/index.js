@@ -78,6 +78,26 @@ buttonElements.forEach(element => {
     });
 });
 
+//"Fun Bus" heading changes to "Cyberpunk Bus" if mouse goes over it then goes off of it
+const logoHeadingElement = document.querySelector(".logo-heading");
+logoHeadingElement.addEventListener("mouseout", event => {
+    event.target.textContent = "Cyberpunk Bus";
+});
+
+
+
+/*header class="main-navigation">
+    <div class="container nav-container">
+    <h1 class="logo-heading">Fun Bus</h1>
+<nav class="nav">
+    <a class="nav-link" href="#">Home</a>
+    <a class="nav-link" href="#">About Us</a>
+<a class="nav-link" href="#">Blog</a>
+    <a class="nav-link" href="#">Contact</a>
+    </nav>
+    </div>
+    </header>*/
+
 //resizing of window changes fun bus or cyber bus image to cyber ant man image
 window.addEventListener("resize", () => {
     funBusImg.setAttribute("src", "img/cyber ant man.jpg");
