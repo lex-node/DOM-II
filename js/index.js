@@ -55,12 +55,14 @@ buttonElements.forEach(element => {
     element.addEventListener("mouseover", event => {
         event.target.style.backgroundColor = "#ff0080";
         event.target.style.color = "black";
+        event.stopPropagation();
     });
 
     //black background/pink text scheme on a mouse click
     element.addEventListener("click", event => {
         event.target.style.backgroundColor = "black";
         event.target.style.color = "#ff0080";
+        event.stopPropagation();
     });
 });
 
@@ -95,11 +97,11 @@ const destinationBoxes = document.querySelectorAll(".content-pick .destination")
 const destinationBoxesContainer = document.querySelector(".content-pick");
 
 destinationBoxesContainer.addEventListener("click", event => {
-    event.target.style.backgroundColor = "yellow";
+    event.target.style.backgroundColor = "#650D89";
 });
 
 destinationBoxes[0].addEventListener("click", event => {
-    event.target.style.backgroundColor = "green";
+    event.target.style.backgroundColor = "#2DE2E6";
     event.stopPropagation();
 });
 
